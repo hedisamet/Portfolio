@@ -1,17 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./about.css";
-import AboutImg from "../../assets/about.jpg";
+import AboutImg from "../../assets/about2-01.png"; // Import the hover image
 import CV from "../../assets/CV_Med_Hedi_Samet.pdf";
 import Info from './Info';
 
 const About = () => {
+  
+
   return (
     <section className="about section" id="about">
         <h2 className="section__title">About Me</h2>
         <span className="section__subtitle">My Introduction</span>
     
         <div className="about__container container grid">
-            <img src={AboutImg} alt="" className="about__img" />
+            <img 
+              src={AboutImg} 
+              alt="About" 
+              className="about__img" 
+              
+            />
             <div className="about__data">
                 <Info/>
                 <p className="about__description">
@@ -19,7 +26,7 @@ const About = () => {
                 </p>
                 <a download="" href={CV} className="button button--flex">Download CV
                 <svg
-                class="button__icon"
+                className="button__icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -46,11 +53,7 @@ const About = () => {
                 </a>
             </div>
         </div>
-        
-
-    
     </section>
-
   )
 }
 

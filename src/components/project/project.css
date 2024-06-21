@@ -1,0 +1,151 @@
+.web__container{
+    grid-template-columns: repeat(1,350px);
+    column-gap: 3rem;
+    justify-content: center;
+}
+.projects__container{
+    grid-template-columns: repeat(2,350px);
+    column-gap: 3rem;
+    justify-content: center;
+}
+.projects__content{
+    background-color: var(--container-color);
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 2rem 4rem;
+    border-radius: 1.25rem;
+}
+.projects__title{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    text-align: center;
+    margin-bottom: var(--mb-1-5);
+}
+
+.projects__box{
+    display: flex;
+    justify-content: center;
+    column-gap: 2.5rem;
+}
+
+
+.projects__group{
+    display: grid;
+    align-items: flex-start;
+    row-gap: 1rem;
+}
+
+.projects__data{
+    display: flex;
+    column-gap: 0.5rem;
+}
+.projects .bx-badge-check{
+    font-size: 1rem;
+    color: var(--title-color);
+}
+.projects__name{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    line-height: 18px;
+}
+
+.projects__level{
+    font-size: var(--tiny-font-size);
+}
+.projects__button{
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.25rem;
+    cursor: pointer;
+  }
+  .projects__button-icon {
+    font-size: 1rem;
+    transition: 0.3s;
+  }
+  
+  .projects__button:hover .projects__button-icon {
+    transform: translateX(0.25rem);
+  }
+
+
+  .field__content {
+    display: none;
+}
+
+.field__content-active {
+    display: block;
+}
+
+  .field__container {
+    max-width: 768px;
+  }
+  
+  .field__tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--mb-2);
+  }
+  
+  .field__button {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    color: var(--title-color);
+    margin: 0 var(--mb-1);
+    cursor: pointer;
+  }
+  
+  .field__button:hover {
+    color: var(--title-color-dark);
+  }
+  
+  .field__icon {
+    font-size: 1.8rem;
+    margin-right: var(--mb-0-25);
+  }
+  
+  .field__active {
+    color: var(--title-color-dark);
+  }
+  .field__sections {
+    display: grid;
+    grid-template-columns: 0.5fr;
+    justify-content: center;
+  }
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .web__container{
+        grid-template-columns: max-content;
+        row-gap: 2rem;
+    }
+    .projects__container{
+        grid-template-columns: max-content;
+        row-gap: 2rem;
+    }
+  }
+  
+  /* For medium devices */
+  
+  @media screen and (max-width: 576px) {
+    .web__container{
+        grid-template-columns: 1fr;
+    }
+    .projects__container{
+        grid-template-columns: 1fr;
+    }
+    .projects__content{
+        padding:1.5rem;
+    }
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 350px) {
+   .projects__box{
+    column-gap: 1.25rem;
+   }
+   .projects__name{
+    font-size:var(--small-font-size) ;
+   }
+  }
+  
